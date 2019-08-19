@@ -1,4 +1,4 @@
-eimport binascii
+import binascii
 import functools
 import itertools
 import logging
