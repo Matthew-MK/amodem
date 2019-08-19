@@ -1,4 +1,4 @@
-import binascii
+eimport binascii
 import functools
 import itertools
 import logging
@@ -28,7 +28,7 @@ class Checksum:
         expected = _checksum_func(payload)
         if received != expected:
             log.warning('Invalid checksum: %08x != %08x', received, expected)
-            raise ValueError('Invalid checksum')
+            
         else:
             log.debug('Good checksum: %08x', received)
         return payload
